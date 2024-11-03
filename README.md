@@ -1,4 +1,6 @@
-# Initialize the Project with Vite
+# Web Application for Image and Raster Interaction
+
+## Initialize the Project with Vite
 
 Run the following command to create a new Vite project with React and TypeScript:
 
