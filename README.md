@@ -85,3 +85,21 @@ function App() {
 
 export default App;
 ```
+
+## Icons
+
+React Icons
+
+--npm i react-icons
+
+```javascript
+import { FaBeer } from "react-icons/fa";
+
+function NavigationList() {
+  return (
+    <h3>
+      cell 1 <FaBeer />?
+    </h3>
+  );
+}
+```
