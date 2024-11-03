@@ -1,12 +1,13 @@
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { cardList } from "../data/data";
 
+// Interface for ListNavigation component props
 interface IListNavavigation {
   selectedCell: string;
   setSelectedCell: React.Dispatch<React.SetStateAction<string>>;
   setHoveredCell: React.Dispatch<React.SetStateAction<string>>;
 }
-
+// ListNavigation component displays a list of cells with visibility toggles
 const ListNavigation = ({
   selectedCell,
   setSelectedCell,
@@ -29,19 +30,21 @@ const ListNavigation = ({
 
 export default ListNavigation;
 
+// Interface for MenuItem component props
 interface ImenuItem {
   title: string;
   selectedCell: string;
   setSelectedCell: React.Dispatch<React.SetStateAction<string>>;
   setHoveredCell: React.Dispatch<React.SetStateAction<string>>;
 }
+// MenuItem component represents an individual item in the list with hover and click functionality
 const MenuItem = ({
   title,
   selectedCell,
   setSelectedCell,
   setHoveredCell,
 }: ImenuItem) => {
-  const isSelected = title === selectedCell;
+  const isSelected = title === selectedCell; // Check if this cell is currently selected
   return (
     <div
       className=" w-full flex gap-2 items-center justify-center"

@@ -1,11 +1,14 @@
 import { cardList } from "../data/data";
 import img from "../assets/imgraster.jpeg";
 
+// Define the interface for RasterImageGrid component props
 interface IRasterImageGrid {
   selectedCell: string;
   hoveredCell?: string;
   setSelectedCell?: React.Dispatch<React.SetStateAction<string>>;
 }
+
+// RasterImageGrid component displays an image with a grid overlay and interaction for hover and selection
 const RasterImageGrid = ({ selectedCell, hoveredCell }: IRasterImageGrid) => {
   return (
     <div className=" w-full h-screen">
