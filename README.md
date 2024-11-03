@@ -17,30 +17,26 @@ Navigate into your project directory and install the necessary dependencies:
 
 Vite offers two plugins to enable Fast Refresh in React, which allows components to update without a full reload:
 
-## Option 1: Babel Plugin – This is the default plugin and uses Babel:
+Option 1: Babel Plugin – This is the default plugin and uses Babel:
 
-npm install @vitejs/plugin-react
+- npm install @vitejs/plugin-react
 
-## Option 2: SWC Plugin – Uses SWC (a fast alternative to Babel) and can handle large projects more efficiently:
+Option 2: SWC Plugin – Uses SWC (a fast alternative to Babel) and can handle large projects more efficiently:
 
-npm install @vitejs/plugin-react-swc
+- npm install @vitejs/plugin-react-swc
 
-# 1. Install Tailwind CSS via npm
+## 1. Install Tailwind CSS via npm
 
 In your project directory, install Tailwind CSS and its necessary dependencies:
 
-bash
-Copy code
-npm install -D tailwindcss postcss autoprefixer
-Then, initialize the Tailwind CSS configuration files:
+- npm install -D tailwindcss postcss autoprefixer
+  Then, initialize the Tailwind CSS configuration files:
 
-bash
-Copy code
-npx tailwindcss init -p
-This creates two files:
+- npx tailwindcss init -p
+  This creates two files:
 
-tailwind.config.js - for configuring Tailwind’s settings
-postcss.config.js - for setting up PostCSS plugins
+- tailwind.config.js - for configuring Tailwind’s settings
+- postcss.config.js - for setting up PostCSS plugins
 
 ## 2. Configure Tailwind to Remove Unused Styles in Production
 
