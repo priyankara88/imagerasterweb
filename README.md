@@ -2,7 +2,7 @@
 
 ## Initialize the Project with Vite
 
-Run the following command to create a new Vite project with React and TypeScript:
+Run the following command to create a new Vite project with React and TypeScript
 
 - npm create vite@latest imgerasterapp -- --template react-ts
 
@@ -10,26 +10,26 @@ Replace "imgerasterapp" with your desired project name.
 
 ## Install Dependencies
 
-Navigate into your project directory and install the necessary dependencies:
+Navigate into your project directory and install the necessary dependencies
 
 - cd imgerasterapp
 - npm install
 
 ## Choose a Vite Plugin for Fast Refresh
 
-Vite offers two plugins to enable Fast Refresh in React, which allows components to update without a full reload:
+Vite offers two plugins to enable Fast Refresh in React, which allows components to update without a full reload
 
-Option 1: Babel Plugin – This is the default plugin and uses Babel:
+Option 1: Babel Plugin – This is the default plugin and uses Babel
 
 - npm install @vitejs/plugin-react
 
-Option 2: SWC Plugin – Uses SWC (a fast alternative to Babel) and can handle large projects more efficiently:
+Option 2: SWC Plugin – Uses SWC (a fast alternative to Babel) and can handle large projects more efficiently
 
 - npm install @vitejs/plugin-react-swc
 
 ## 1. Install Tailwind CSS via npm
 
-In your project directory, install Tailwind CSS and its necessary dependencies:
+In your project directory, install Tailwind CSS and its necessary dependencies
 
 - npm install -D tailwindcss postcss autoprefixer
   Then, initialize the Tailwind CSS configuration files:
@@ -42,7 +42,7 @@ In your project directory, install Tailwind CSS and its necessary dependencies:
 
 ## 2. Configure Tailwind to Remove Unused Styles in Production
 
-In your tailwind.config.js file, add the paths to all your template files under the content key to enable Tailwind’s purge feature:
+In your tailwind.config.js file, add the paths to all your template files under the content key to enable Tailwind’s purge feature
 
 javascript
 
@@ -59,7 +59,7 @@ export default {
 
 ## 3. Add Tailwind’s Base Styles
 
-In your CSS file (e.g., src/index.css), add the following lines to include Tailwind’s base, components, and utilities styles:
+In your CSS file (e.g., src/index.css), add the following lines to include Tailwind’s base, components, and utilities styles
 
 css
 
@@ -71,10 +71,10 @@ css
 
 ## 4. Start the Development Server
 
-To see Tailwind CSS in action, start the development server:
+To see Tailwind CSS in action, start the development server
 
 npm run dev
-Now, you can begin using Tailwind classes in your React components. For example:
+Now, you can begin using Tailwind classes in your React components. For example
 
 ```javascript
 function App() {
@@ -105,3 +105,13 @@ function NavigationList() {
   );
 }
 ```
+
+## Install Testing Dependencies
+
+If you haven't already, install the testing libraries
+
+- npm install @testing-library/react @testing-library/jest-dom jest
+
+## Run Tests
+
+- npm test
