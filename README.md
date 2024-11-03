@@ -90,7 +90,7 @@ export default App;
 
 React Icons
 
---npm i react-icons
+- npm i react-icons
 
 ```javascript
 import { FaBeer } from "react-icons/fa";
