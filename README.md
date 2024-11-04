@@ -88,6 +88,10 @@ function App() {
 export default App;
 ```
 
+# Run the application
+
+- npm run dev
+
 ## Icons
 
 React Icons
